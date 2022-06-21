@@ -1,0 +1,20 @@
+from ast import Num
+from tkinter import Menu
+
+
+class CoffeOrder :
+    def  __init__ (self,customer_name:str,menu:str,num:int=1,size:str='R') -> None :
+        #instance variables
+        self.customer_name= customer_name
+        self.menu = menu
+        self.num = num
+        self.size = size.upper()
+        
+    def check_menu(self):
+        pass
+    def compute_price(self):
+        pass
+    def display_detail(self):
+        pass
+    def  __del__(self):
+        print("object was destroyed")
