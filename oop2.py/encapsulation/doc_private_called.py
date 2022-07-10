@@ -1,0 +1,8 @@
+from documentary_private import Documentary
+
+m = Documentary('Mulan',2020,'action')
+m.__get_movie() #เรียก private method ไม่ได้
+print(m._genre) #เรียก private accrtibute
+m.print_detail()
+print(f'year: {m._Movie_year}')
+#obj_ClassName_privateattribute
